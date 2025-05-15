@@ -2,18 +2,26 @@
 // in dart everything is an Object and when we create variable actually in memory an object is created,
 // So i an say variable stores the reference that is the address of an object
 
-// variable has two scopes local and global
+
 
 // dart is Optionally type lang , is supports 'static' and 'dynamic' type
 // statically type means what type of variable is known at compile time to check quick issue and deduct the bug
 // dynamically type means the type of variable is known at runtime
 
 
+// note that variable is declared with their type
 // var(type) age(variable name) =(operator) 18(value) ;
 // expression : (x+y);
-// note that variable is declared with their type
+
+// variable has two scopes local and global
+// variable has global scopes
+int globalVariable = 100 ;
 
 void main() {
+
+  // variable has local scopes
+  int x = 10 ;
+  print(x);
 
   // runtime type to check compile-time type
   var a = 10 ;
