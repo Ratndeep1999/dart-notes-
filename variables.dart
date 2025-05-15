@@ -80,6 +80,9 @@ void main() {
   // 6.1.3. num   for both value
   num num3 = 50;
 
+  // method .toStringAsFixed(x) it is use to round double values up-to x decimal places
+  double price = 15.210546 ;
+  print('Price is : ${price.toStringAsFixed(2)}');  // Price is : 15.21
 
 
   // 6.2. String it represents text data enclosed in single or double quotes / it is used to store text data in singe or double quotes
