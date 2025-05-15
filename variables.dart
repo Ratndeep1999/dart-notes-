@@ -9,6 +9,8 @@
 // dynamically type means the type of variable is known at runtime
 
 
+// var(type) age(variable name) =(operator) 18(value) ;
+// expression : (x+y);
 // note that variable is declared with their type
 
 void main() {
