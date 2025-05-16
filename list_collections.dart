@@ -45,8 +45,4 @@ void main() {
   print(events);  // [Bacholar Party, Marriage, Reception, HoneyMoon, 50000]
 
 
-
-
-
-
 }
