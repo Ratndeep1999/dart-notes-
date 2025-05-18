@@ -10,7 +10,7 @@ void add(int num1, int num2) {  // both with their type is nothing but the param
   int sum ;
 
   sum = num1 + num2 ;
-  print('The Sum od two numbers is $sum');
+  print('The Sum of two numbers is $sum');
 }
 
 
