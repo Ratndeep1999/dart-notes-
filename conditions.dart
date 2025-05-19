@@ -112,7 +112,7 @@ void main() {
 
 
   // 5. condition base program on boolean values
-  bool isMarried = false ;
+  bool isMarried = true ;
 
   if(isMarried){
     print('You are Married!');
