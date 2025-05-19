@@ -110,6 +110,24 @@ void main() {
   }
 
 
+  int day = 3;
+
+  if(day == 1) {
+    print('Monday');
+  } else if(day == 2) {
+    print('Tuesday');
+  } else if(day == 3) {
+    print('Wednesday');
+  } else if(day == 4) {
+    print('Thursday');
+  } else if(day == 5) {
+    print('Friday');
+  } else if(day == 6) {
+    print('Saturday');
+  } else if(day == 7) {
+    print('Sunday');
+  }
+
 
   // 5. condition base program on boolean values
   bool isMarried = true ;
