@@ -39,7 +39,6 @@ void main(){
 
 
   // e.g of nested for loop with switch
-
   int j ;
 
   for(i = 1; i <= 3; i++) {
@@ -64,16 +63,22 @@ void main(){
 
 
 
+  // e.g nested for loop break using "label break"
+  outerLoop : for(i = 1; i <= 3; i++) {
+    for(j = 1; j <= 3; j++) {
 
+      print("i = $i     j = $j ");
 
+      if(i == 2){
+        break outerLoop;
+      }
+    }
+  }
 
-
-
-
-
-
-
-
+  // i = 1     j = 1
+  // i = 1     j = 2
+  // i = 1     j = 3
+  // i = 2     j = 1
 
 
 
@@ -85,6 +90,8 @@ void main(){
   // 2.2. dart supports both regular and labeled continue
   // 2.3. the continue statement skip the current iteration when it trigger and proceeds to the next one
   // 2.4. when continue statement is encountered in a loop it doesn't terminate the loop but rather jump the flow to next iteration
+
+
 
 
 
