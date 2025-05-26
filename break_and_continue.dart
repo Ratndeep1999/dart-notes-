@@ -82,6 +82,7 @@ void main(){
 
 
 
+  print("\n");
 
 
 
@@ -92,7 +93,40 @@ void main(){
   // 2.4. when continue statement is encountered in a loop it doesn't terminate the loop but rather jump the flow to next iteration
 
 
+  // e.g of 1 continue statement
+  for( i= 1; i <= 10; i++ ) {
+    if( i == 4 ) {
+      continue ;  // it skips the current iteration when i==4  triggers
+    }
+    print('i = $i');
+  }
 
+  // i = 1
+  // i = 2
+  // i = 3
+  // i = 5
+  // i = 6
+  // i = 7
+  // i = 8
+  // i = 9
+  // i = 10
+
+  print("\n");
+
+  // e.g 2 of nested loop with label continue
+  outerLoop : for( i= 1; i<= 3; i++ ) {
+
+    for( j= 1; j<= 3; j++) {
+      if( j==2 ) {
+        continue outerLoop ;
+      }
+      print("i= $i     j= $j");
+    }
+  }
+
+  // i= 1     j= 1
+  // i= 2     j= 1
+  // i= 3     j= 1
 
 
 
