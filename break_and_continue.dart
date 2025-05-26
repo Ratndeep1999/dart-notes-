@@ -9,6 +9,58 @@ void main(){
   // 1.4. dart supports regular as well as labeled break
 
 
+  int i ;
+
+  // e.g 1  with-out Break
+  for(i = 1 ; i <= 10; i++) {
+    print("i = $i");
+  }
+  // i = 1
+  // i = 2
+  // i = 3
+  // i = 4
+  // i = 5
+  // i = 6
+  // i = 7
+  // i = 8
+  // i = 9
+  // i = 10
+
+
+  // e.g 1 with Break
+  for( i=1;  i<= 10; i++ ) {
+    if(i == 3) {
+      break ;  // when i==3 trigger then loop jump outside the loop
+    }
+    print("i = $i");
+  }
+  // i = 1
+  // i = 2
+
+
+  // e.g of nested for loop with switch
+
+  int j ;
+
+  for(i = 1; i <= 3; i++) {
+    for(j = 1; j <= 3; j++) {
+
+      print("i = $i     j = $j ");
+
+      if(i == 2){
+        break ;
+      }
+    }
+  }
+
+  // i = 1     j = 1
+  // i = 1     j = 2
+  // i = 1     j = 3
+  // i = 2     j = 1
+  // i = 3     j = 1
+  // i = 3     j = 2
+  // i = 3     j = 3
+
 
 
 
