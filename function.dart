@@ -37,7 +37,7 @@ int function( int n ){    // Function name with return type , parameter with the
     fact = fact * i ;
   }
   return fact ;   // it return integer value
-}
+}   // function header + function body = function definition
 
 // now , refer parameter vs arguments
 
