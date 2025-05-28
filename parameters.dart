@@ -75,6 +75,14 @@ void main(){
   // 3. Optional Parameters
   // use to make the parameter optional in function call
 
+  // e.g Combination of Positional and Named parameters
+  cousins("Ratndeep", 'Sujal', 'Suraj', sister: 'Sonali');  // sister is optional and named parameter
+  // Ratndeep is my big brother from us, and Sonali she is the small and single one, Sujal he is younger one, Suraj is middle brother
+
+  // Note : I have to follow the position of positional para. when passing values
+  // and In named parameter i can use required or default values
+
+
 }
 
 // printData function
@@ -100,4 +108,12 @@ void cookDish({String? nonVeg, String? veg, String? chinese, String? salad, Stri
 // requiredDetails function
 void requiredDetails({required String name, required int age, required String gender}){
   print("My name is $name, and I am $gender I'am $age years old");
+}
+
+// cousins function
+// here sister is optional if value pass then ok other wise it will take default value 'Sana'
+void cousins(String olderBrother, String youngBrother, String middleBrother, { String? sister = 'Sana' }){
+  print("$olderBrother is my big brother from us, "
+      "and $sister she is the small and single one, $youngBrother "
+      "he is younger one, $middleBrother is middle brother");
 }
