@@ -27,6 +27,22 @@ void main() {
   int result = function(5) ;  // function calling and assigning to variable and passing 5 as argument
   print("The factorial of 5 is : $result");    // The factorial of 5 is : 120
 
+
+  // refer categories of function
+
+  // refer type of functions (pre and user define)
+
+
+  // Type of User define Functions
+  // 1. Normal
+
+
+  // 2. Anonymous / lambda Function
+
+
+  // 3. Arrow Function / arrow notation
+
+
 }
 
 // function of calculate factorial
