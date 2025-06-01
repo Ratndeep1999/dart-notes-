@@ -43,10 +43,19 @@ void main() {
   // 3. Arrow Function / arrow notation
 
 
+
+  // 1. Anonymous Function / lambda / nameless function
+  var cube = ( int number ) {        // assign this function into 'Cube' variable then the type of cube variable is Function
+    return number * number * number ;
+  } ;
+  print("The Cube of 2 is ${cube(2)}"); // The Cube of 2 is 8
+  print("The Cube of 5 is ${cube(5)}"); // The Cube of 5 is 125
+  print("The Cube of 3 is ${cube(3)}"); // The Cube of 3 is 27
+
 }
 
 // function of calculate factorial
-int function( int n ){    // Function name with return type , parameter with their type  , it complete function header
+int function( int n ){    // Function name with return type, parameter with their type, it complete function header
   int fact = 1 ;   // fact variable initialize with value 1
 
   for( int i= 1; i <= n; i++ ){     // function body
@@ -99,4 +108,19 @@ double areaOfCircle(int radius){
 
 
 
-//  function.dart : Function?, categories, types : user and pre, user types : normal, anonymous, and arrow
+
+// Type of Function
+
+// 1. Anonymous Function / Lambda function
+// if there is nothing return type and function name then it is anonymous function
+// it short, function without name and return type (nameless function)
+
+// Then How to call this type of function ?
+// 1. assign this function to some variable and call using variable.
+
+// 2. pass this function as a parameter inside the another function that actually takes function as parameter.
+
+// [ Note: nameless function always written within main function body ]
+
+
+
