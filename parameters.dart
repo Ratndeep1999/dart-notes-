@@ -17,17 +17,17 @@ void main(){
   // if I call function with arguments in wrong order, I will get wrong result
 
   // e.g 1
-  printData('Female','Sonali'); // passing arguments in wrong order when function calling
-  printData('Sonali','Female'); // passing arguments in correct order
+  printData('Female', 'Sonali'); // passing arguments in wrong order when function calling
+  printData('Sonali', 'Female'); // passing arguments in correct order
   // Hello !, My name is Female and i am Sonali
   // Hello !, My name is Sonali and i am Female
 
   print("\n");
 
   // e.g 2 default values on positional para.
-  printDetails('Sonali','Female'); // i forget to pass title here so, it takes default values
-  printDetails('Sonali','Female', 'miss.'); // but here i pass proper value for title
-  printDetails('Ratndeep','Male', 'mr.');
+  printDetails('Sonali', 'Female'); // i forget to pass title here so, it takes default values
+  printDetails('Sonali', 'Female', 'miss.'); // but here i pass proper value for title
+  printDetails('Ratndeep', 'Male', 'mr.');
   // hello ! mr. / miss. Sonali you are Female
   // hello ! miss. Sonali you are Female
   // hello ! mr. Ratndeep you are Male
@@ -66,7 +66,7 @@ void main(){
   // it allow to pass values is must when function calls otherwise compile time error
 
   // e.g 2 Required with named para.
-  requiredDetails(  gender: "Female", age: 22, name: "Sonali");
+  requiredDetails( gender: "Female", age: 22, name: "Sonali");
   // My name is Sonali, and I am Female I'am 22 years old
 
   print("\n");

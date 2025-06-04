@@ -45,12 +45,21 @@ void main() {
 
 
   // 1. Anonymous Function / lambda / nameless function
+  // type 1 - Assign to variable
   var cube = ( int number ) {        // assign this function into 'Cube' variable then the type of cube variable is Function
     return number * number * number ;
   } ;
   print("The Cube of 2 is ${cube(2)}"); // The Cube of 2 is 8
   print("The Cube of 5 is ${cube(5)}"); // The Cube of 5 is 125
   print("The Cube of 3 is ${cube(3)}"); // The Cube of 3 is 27
+
+
+  // type 2 - anonymous function pass as parameter into another function
+  List names = ['Sam', 'Jack', 'Mark'];
+  names.forEach((name){  // Here, name variable is anonymous function name variable print each value of names
+    print(name);
+  });
+
 
 }
 
