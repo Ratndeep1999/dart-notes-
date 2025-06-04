@@ -56,7 +56,7 @@ void main() {
 
   // type 2 - anonymous function pass as parameter into another function
   List names = ['Sam', 'Jack', 'Mark'];
-  names.forEach((name){  // Here, name variable is anonymous function name variable print each value of names
+  names.forEach((name){  // Here, forEach() is method which takes 'name' as a parameter and inside there is anonymous function
     print(name);
   });
 
@@ -132,4 +132,7 @@ double areaOfCircle(int radius){
 // [ Note: nameless function always written within main function body ]
 
 
+
+// 2. Arrow function / arrow notation
+// if func
 
