@@ -133,11 +133,3 @@ double areaOfCircle(int radius){
 
 
 
-// 2. Arrow function / arrow notation
-// if function contain one line of code, one statement or short expression then this function convert into arrow function
-
-// it also known as shorthand notation formation, no need to use 'return' keyword
-// syntax : =>
-// it only work on single expression
-// it not work in loop, if etc
-// use for anonymous and normal function
