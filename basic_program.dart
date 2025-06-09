@@ -16,4 +16,4 @@ void main() {  // here void means this function doesn't returning any value i ca
   // string interpolation ($firstName)
   print("My Full Name is $firstName ${lastName}"); // $ is use to fetch value of variable
 
-} // this {} braces represents beginning and ending of a block of code
+}
