@@ -4,7 +4,9 @@
 
 
 
-cally type means the type of variable is known at runtime
+// dart is Optionally type lang , is supports 'static' and 'dynamic' type
+// statically type means what type of variable is known at compile time to check quick issue and deduct the bug
+// dynamically type means the type of variable is known at runtime
 
 
 // note that variable is declared with their type
