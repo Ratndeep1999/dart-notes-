@@ -9,6 +9,9 @@ void main() {
   var age = 21 ;   // this kind of declaration is known as creating variable with type annotation
   print(age.runtimeType);  // int
 
+  // type given is must but not know what the specific type of value
+  dynamic name = 'Ratndeep' ;
+  print(name.runtimeType);  // String
 
 
 
