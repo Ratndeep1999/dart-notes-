@@ -30,6 +30,7 @@ void main() {
   // 1. static/ compile time checking : give exception at compile time
   // 2. runtime checking : second level of type safety , give exception at runtime
 
+  // (testing) this was type safety and type inference
 
 
 }
