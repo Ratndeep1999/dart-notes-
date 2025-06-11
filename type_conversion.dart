@@ -43,6 +43,12 @@ void main() {
 
 
 
+  //Summary
+  // int.parse() : str to int
+  // double.parse : str to double
+  // .toString : int to str
+  // .toint : double to int
+
 
 
   // Cross check
