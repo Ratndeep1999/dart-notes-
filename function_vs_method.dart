@@ -3,10 +3,6 @@
 
 void main(){
 
-  // Method
-  // method is the function written inside the class
-
-
 
   // Function
   // function is just an individual entity
