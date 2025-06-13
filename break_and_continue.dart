@@ -81,9 +81,7 @@ void main(){
   // i = 2     j = 1
 
 
-
   print("\n");
-
 
 
   // 2. Continue
