@@ -42,6 +42,7 @@ void main() {
   print(events);  //  [Bacholar Party, Marriage, Reception, HoneyMoon]
 
   events.add(50000);  // list is dynamic , type is not specified <>
-  print(events);
+  print(events);  // [Bacholar Party, Marriage, Reception, HoneyMoon, 50000]
+
 
 }
