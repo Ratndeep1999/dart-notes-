@@ -73,7 +73,7 @@ int function( int n ){    // Function name with return type, parameter with thei
   return fact ;   // it return integer value
 }   // function header + function body = function definition
 
-
+// now , refer parameter vs arguments
 
 // Type of functions
 // 1. Pre-Define : function that already define into dart as a tool just call and use it e.g. print()
