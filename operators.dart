@@ -135,7 +135,7 @@ void main() {
 
 
 
-
+  // 7. Type test operator
   // 7.1. 'is' it returns boolean value if the object has specific type  i
   var o = 0 ;
   print(o is int );  // true
