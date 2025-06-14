@@ -1,5 +1,5 @@
 
-// Standard input output
+
 
 import 'dart:io';  // This library import the feature of 'input'
 
