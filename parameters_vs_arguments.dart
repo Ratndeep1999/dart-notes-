@@ -14,7 +14,7 @@ void add(int num1, int num2) {  // both with their type is nothing but the param
 }
 
 
-
+// main function
 void main(){
 
   // Function calling
