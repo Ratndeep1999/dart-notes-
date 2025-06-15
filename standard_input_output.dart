@@ -16,7 +16,10 @@ void main() {
   // Note : The ! (null assertion operator) is used to assert that the result of readLineSync() is not null.
 
 
-
+  // 1. String user input
+  print('Enter your name: ');  // Enter your name:
+  String ? name = stdin.readLineSync() ;  // if i entered Ratndeep
+  print('Your name is $name');  // Your name is Ratndeep
 
 
   // 2. integer user input without decimal value
