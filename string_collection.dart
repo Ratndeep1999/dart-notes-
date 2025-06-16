@@ -1,7 +1,7 @@
 
 void main() {
 
-  // Properties of String
+
 
   String name = 'Ratndeep' ;
   // 1. code units : returns list of UTF - 16 code units of the string
