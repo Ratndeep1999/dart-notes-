@@ -3,7 +3,7 @@
 void main() {
 
 
-// Loop's : it is mostly use to run same code of statement multiple time or
+// Loop's : mostly use to execute  or
 // repeat a block of code until to meet specific condition true
 
 // note : primary purpose of all loops is to repeat a block of code
