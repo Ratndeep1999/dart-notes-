@@ -80,7 +80,7 @@ void main() {
 
 
 
-  // 5. fro_each : it is use to iterates in the collection like. list, set and map. So whenever we have collection
+  // 5. for_each : it is use to iterates in the collection like. list, set and map. So whenever we have collection
   // we can iterate the value of collection using for_each loop
 
   List<String> names =['ratndeep', 'Daniel', 'mark', 'paul', 'samuel'];
