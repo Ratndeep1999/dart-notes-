@@ -1,6 +1,6 @@
 // variable is the given name to the memory location where user can store the data and that data can be fetch when required
 // in dart everything is an Object and when we create variable actually in memory an object is created,
-// So i an say variable stores the reference that is the address of an object
+// So i am saying variable stores the reference that is the address of an object
 
 
 
