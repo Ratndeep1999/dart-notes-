@@ -1,5 +1,5 @@
 
-// void main() is the entry point of the program
+// void main() is the entry point of the program without main(0 return runtime exception
 void main() {  // here void means this function doesn't returning any value i can avoid void
 
   // name is variable which holds the value of type string
