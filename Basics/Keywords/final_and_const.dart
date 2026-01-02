@@ -5,7 +5,7 @@ void main() {
 
   final String name = "Ratndeep";
   // name = "Rahul";  // Can't re-assign to the final variable 'name'
-  print(name);
+  print(name);  // Ratndeep
 
   /// const
   // Value can be set at once during compile-time can't re-assign,
@@ -13,5 +13,5 @@ void main() {
 
   const int age = 26;
   // age = 28; // Constant variables can't be assigned a value after initialization.
-  print(age);
+  print(age);  // 26
 }
