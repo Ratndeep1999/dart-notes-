@@ -1,19 +1,19 @@
 
-// void main() is the entry point of the program without main(0 return runtime exception
-void main() {  // here void means this function doesn't returning any value i can avoid void
+// void main() is the entry point of any program without main() compiler return runtime exception.
+void main() {  // here void means this function doesn't returning any value, 'void' can be avoid.
 
-  // name is variable which holds the value of type string
-  var name = 'Ratndeep Chandankhede' ;
-
-  // print function use to print the value which is hold's by variable or entity
-  print(name);  // (semi-colon) ; terminates code statement
-
-  // name = 10 ;     // it gives compile error bec. var(dyn) automatically get the variable type
-
-  var firstName = "Ratndeep" ; // variable name is camelCase (for variable and methods)
+  String fullName = "Ratndeep Chandankhede"; // (semi-colon) ; tells compiler to terminates code statement.
+  var firstName = "Ratndeep" ;
   var lastName = "Chandankhede" ;
+  int age = 26;
 
-  // string interpolation ($firstName)
-  print("My Full Name is $firstName ${lastName}"); // $ is use to fetch value of variable
+  // print() is pre-defined function use to print values that stored inside variable or entity.
+  print(fullName);  // Ratndeep Chandankhede
 
-} // this {} braces represents beginning and ending of a block of code
+  // String interpolation
+  print("My name is $firstName and surname is $lastName");
+
+  // string concatenation
+  print("My full name is ${firstName + " " + lastName}"); // My full name is Ratndeep Chandankhede
+
+} // curly braces {} represents beginning and ending of the block of code
