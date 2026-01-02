@@ -2,6 +2,8 @@
 // It helps to define What the type of value we are storing inside variable.
 // mostly use to categorize and manage data into specific type.
 
+
+
 void main() {
   // numbers: holds numeric value
   int age = 26;
@@ -14,6 +16,9 @@ void main() {
   // boolean: holds only bool type value
   bool isMarried = false;
   bool isMen = true;
+
+  /// Type-annotation
+  // Keyword<dataType> <variableName>
 
   // list: holds multiple value in index order, use square brackets
   List<int> numbers = [1, 2, 3, 4];
