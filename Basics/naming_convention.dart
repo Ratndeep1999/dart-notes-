@@ -1,6 +1,6 @@
 
 
-// it is most important part to write clean and understandable code
+/// it is most important part to write clean and understandable code
 
 // 1. camelCase ; Variable and methods
 // getVariable() , firstName
