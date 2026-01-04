@@ -1,6 +1,11 @@
 /// while loop
 // Use when we don't know the end before execution
 // Use when we depend on the condition only
+// This is entry controller loop
+
+/// Entry controller loop
+// body of loop will execute only when and only when the condition is true
+// if false then throw out of the loop
 
 /// Execution Flow
 // first : check initialization (one time)
@@ -16,8 +21,6 @@
 //   statement
 //   inc/dec
 // }
-
-
 
 void main() {
   int i = 1;
