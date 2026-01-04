@@ -4,7 +4,7 @@
 
 /// syntax
 // collection.forEach(void function(element) {
-//   statement;
+//   // Code to execute for each element
 // });
 
 /// Higher-Order Function
