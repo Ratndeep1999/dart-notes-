@@ -9,11 +9,16 @@
 // For loop
 // While loop
 // Do while
-// For in loop
-
+// For each
+// For in
 
 /// for
 // Use when we know, how many times the code need to repeat.
+// This is entry controller loop
+
+/// Entry controller loop
+// body of loop will execute only when and only when the condition is true
+// if false then throw out of the loop
 
 /// Execution Flow
 // first : check initialization (once)
