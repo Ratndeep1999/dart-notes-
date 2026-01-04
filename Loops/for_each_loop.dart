@@ -3,7 +3,7 @@
 // to iterates the values of collection we use forEach loop
 
 /// syntax
-// collection.forEach(void function(value) {
+// collection.forEach(void function(element) {
 //   statement;
 // });
 
