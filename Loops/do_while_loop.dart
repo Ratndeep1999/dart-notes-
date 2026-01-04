@@ -1,8 +1,11 @@
 /// Do While loop
 // Use to execute the block of code at least once, even if the condition is false.
 // Here condition check after the execution, no matters what the statement
+// This is Exit controller loop
 
-/// IS is known as exit controller loop
+/// Exit controller loop
+// condition won't be check at beginning instead condition will be
+// check at the end of the loop.
 
 /// Execution Flow
 // first : check initialization (one time)
