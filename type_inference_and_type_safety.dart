@@ -1,36 +1,30 @@
+/// Type Inference and Type-Safety
 
+/// Type Inference
+// it is concept that conforms the type of variable base on value assigned,
+// internally manage by dart analyzer.
 
-// Type Inference : it basically concept that conforms the type of variable base on value assigned,
-// internally manage by dart analyzer
+/// Type safety
+// dart is a type safety language,
+// it always check value must match with variable type.
+
+/// There are two types of checking system manage internally
+// static/compile-time checking: give exception at compile time.
+// runtime checking: second level of type safety , give exception at runtime.
 
 void main() {
+  // Type infer at compile-time
+  var age = 21;
+  print(age.runtimeType); // int
 
-  // e.g
-  var age = 21 ;   // this kind of declaration is known as creating variable with type annotation
-  print(age.runtimeType);  // int
+  // Type infer at run-time
+  dynamic name = 'Ratndeep';
+  print(name.runtimeType); // String
 
-  // type given is must but not know what the specific type of value
-  dynamic name = 'Ratndeep' ;
-  print(name.runtimeType);  // String
+  var x;
+  print(x.runtimeType); // Null
 
-
-
-  var x ;
-  print(x.runtimeType);  // Null  (nothing or no value) it means dart system haven't infer the type of variable
-
-
-  // Now
-
-  // Type safety : dart is a type safety language, its always check value must match with variable type
-  int y ;
-  y = 10 ;  // ok
+  int y;
+  y = 10; // ok
   // y = 10.5 ;  // compile time error
-
-  // Type Safety are two types of checking system both manage internally
-  // 1. static/ compile time checking : give exception at compile time
-  // 2. runtime checking : second level of type safety , give exception at runtime
-
-  // (testing) this was type safety and type inference
-
-
 }
