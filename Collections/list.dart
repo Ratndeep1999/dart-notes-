@@ -477,7 +477,7 @@ void main() {
 
   // cast<T>()
   List<dynamic> data = [1, 2, 3];
-
   List<int> numbers = data.cast<int>();
   print(numbers); // [1, 2, 3]
+
 }
