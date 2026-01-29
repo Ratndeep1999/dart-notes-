@@ -36,6 +36,7 @@
 // All built-in exception classes in Dart are subclasses of `Exception`.
 
 void main() {
+  // Example 1
   try {
     String message = "Hello";
     print('The character at the position 5 is ${message[5]}'); // RangeError
@@ -48,4 +49,16 @@ void main() {
 
   // Exception occurred: RangeError (index): Invalid value: Not in inclusive range 0..4: 5
   // Outside try-catch..!
+
+  // Example 2
+  try {
+    int result = 12 ~/ 0;
+    print('The result is $result');
+  } on IntegerDivisionByZeroException {
+    // IntegerDivisionByZeroException is inbuild subclass of Exception class.
+    print(
+      'Can not divide by zero',
+    ); // Developer knows the exception that's why 'on' clause use.
+  }
+  // Can not divide by zero
 }
