@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 /// Map class
 // collection of elements, element is pair of key & value.
 // every key must be unique.
@@ -167,6 +169,9 @@ void main() {
   // any(): return true if any single entry matcher the condition.
   // toList(): converts keys/values/entries into a list.
   // toSet(): converts values (or keys) into a set.
+  // fromIterables(): creates a map by pairing two iterables.
+  // fromEntries(): creates a map from an iterable of MapEntry objects.
+  // cast<K, V>(): forces a map to a specific key- value type.
 
   // addAll()
   person.addAll({'post': 'Software Developer', 'salary': 35000});
@@ -276,6 +281,103 @@ void main() {
   print(person.values.toSet()); // {Aparna, Manager, Pune}
   print(person.entries.toSet()); // {MapEntry(name: Aparna), MapEntry(post: Manager), MapEntry(city: Pune)}
 
-  /// Sorting map
+  // fromIterables()
+  // Map<K, V> Map.fromIterables(Iterable<K> keys,Iterable<V> values)
+  List<String> _keys = ['name', 'age', 'city'];
+  List values = ['Aparna', 25, 'Pune'];
+  person = Map.fromIterables(_keys, values);
+  print(person); // {name: Aparna, age: 25, city: Pune}
 
+  // Throw Exception
+  // List abcKeys = ['a', 'b', 'c'];
+  // List numValues = [1];
+  // print(Map.fromIterables(abcKeys, numValues));
+
+  // fromEntries()
+  // Map<K, V> Map.fromEntries(Iterable<MapEntry<K, V>> entries)
+  var myEntries = [
+    MapEntry('a', 1),
+    MapEntry('b', 2),
+    MapEntry('c', 3),
+  ];
+  print(Map.fromEntries(myEntries)); // {a: 1, b: 2, c: 3}
+
+  // Filtering map in a proper way
+  // Map filtered = Map.fromEntries(
+  //   person.entries.where((e) => e.value is String),
+  // );
+
+  // cast<K, V>()
+  // Map<K, V> cast<K, V>()
+  Map<dynamic, dynamic> rawMap = {
+    'id': 1,
+    'name': 'Aparna',
+  };
+  Map<String, dynamic> safeMap = rawMap.cast<String, dynamic>();
+
+  /// Spread Operator
+  // instead of using .addAll(), which modifies an existing map, the
+  // spread operator allows to build new maps declaratively.
+
+  Map baseInfo = {'id': 101, 'role': 'Admin'};
+  Map userInfo = {'name': 'Alice', 'city': 'Pune'};
+
+  // 1. Combining maps
+  Map combined = {
+    ...baseInfo,
+    ...userInfo,
+    'status': 'Active', // You can add new entries inline!
+  };
+  print(combined); // {id: 101, role: Admin, name: Alice, city: Pune, status: Active}
+
+// 2. Null-aware spread (important for API data)
+  Map? extraData;
+  Map finalMap = {
+    ...combined,
+    ...?extraData, // Only spreads if extraData is NOT null
+  };
+  print(finalMap); // {id: 101, role: Admin, name: Alice, city: Pune, status: Active}
+
+  /// Null Awareness
+  // In dart, when we try to access a key that doesn't exist,
+  // it return 'null'. Instead of checking for null an 'if' statement.
+
+  // Null-Coalescing Operator (??): provides a default value if the key is missing.
+  Map scores = {'math': 90};
+  // If 'science' is missing, use 0 instead of crashing
+  int scienceScore = scores['science'] ?? 0;
+  print(scienceScore); // 0
+
+  // Null-Aware Assignment (??=): adds a value to map only if key doesn't exist or is null.
+  Map settings = {'theme': 'dark'};
+  print(settings); // {theme: dark}
+  settings['fontSize'] ??= 14; // Adds fontSize: 14
+  settings['theme'] ??= 'light'; // Does nothing because 'theme' exists
+  print(settings); // {theme: dark, fontSize: 14}
+
+  /// Sorting Map
+  // Sorting by keys: common requirement, extract keys, sort them and rebuild map.
+  Map<String, int> myScores = {'Zebra': 10, 'Apple': 50, 'Mango': 20};
+  // 1. Get keys and sort them
+  var sortedKeys = myScores.keys.toList()..sort();
+  // 2. Create a new map from sorted keys
+  Map sortedMap = {
+    for (var key in sortedKeys) key: myScores[key]
+  };
+  print(sortedMap); // {Apple: 50, Mango: 20, Zebra: 10}
+
+  // Sorting by values:
+  Map<String, int> fruits = {'Apple': 50, 'Mango': 20, 'Zebra': 10};
+  // Convert to entries, sort by value, and convert back to a Map
+  var sortedEntries = fruits.entries.toList()
+    ..sort((e1, e2) => e1.value.compareTo(e2.value));
+  Map sortedByValue = Map.fromEntries(sortedEntries);
+  print(sortedByValue); // {Zebra: 10, Mango: 20, Apple: 50}
+
+  // Splay TreeMap (Expert): automatically sorting.
+  final autoSorted = SplayTreeMap<String, dynamic>();
+  autoSorted['Beta'] = 2;
+  autoSorted['Alpha'] = 1;
+  autoSorted['Gamma'] = 3;
+  print(autoSorted); // {Alpha: 1, Beta: 2, Gamma: 3}
 }
