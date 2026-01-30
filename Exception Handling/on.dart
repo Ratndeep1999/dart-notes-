@@ -38,4 +38,13 @@ void main() {
     print(e);
   }
   // The valid range for the index is [0..4].
+
+  /// I can also use 'catch' with 'on' clause
+  try {
+    print("The character at the position 5 is ${message[5]}");
+  } on RangeError catch (e) {
+    print(e); // RangeError (index): Invalid value: Not in inclusive range 0..4: 5
+  } catch (e) {
+    print(e);
+  }
 }
