@@ -22,15 +22,20 @@
 
 /// In One Line
 // Future: ont-time async result only.
-// Stream: continuous async data.
-// async*: tells the function is stream generative function.
-// yield: emits (निकालना) values into a stream.
-// yield*:
-// StreamController: manually control stream data.
-// Subscriber: listeners, it cab be listen using listen() or StreamBuilder().
-// Single subscription stream: allow single listener.
+// Stream: continuous asynchronous data over time.
+
+// async*: marks a function as a stream-generating function.
+// yield: emits (निकालना) a single value into a stream.
+// yield*: forwards all values from another Iterable or Stream into current stream.
+
+// StreamController: manually controls stream data (add, close, error).
+// Subscriber (listener): receives stream data using listen() or StreamBuilder().
+
+// Single subscription stream: allows only one listener.
 // Broadcast stream: allows multiple listeners.
-// sink: input in stream.
-// stream: output of stream.
-// add(): add data manually in stream.
-// listen(): get data from stream.
+
+// sink: input of the stream (where data is added).
+// stream: output of the stream (where data is listened).
+
+// add(): manually adds data into the stream.
+// listen(): listens and receives data from the stream.
