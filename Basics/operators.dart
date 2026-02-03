@@ -100,4 +100,7 @@ void main() {
   print(text is String); // true
   // is!
   print(text is! String); // false
+  // typecast
+  Object abc = "ABC";
+  print(abc as String); // ABC
 }
