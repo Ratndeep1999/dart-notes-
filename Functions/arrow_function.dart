@@ -1,17 +1,18 @@
 /// Arrow Function / fat-arrow / arrow notation / short hand notation
-// Use when we return short or one line of code (single expression).
+// Use when the function body contains only single expression.
+// it automatically returns the result of that expression.
 
 /// Syntax
 // returnType functionName(parameters) => expression;
 
-// Function Definition
+// Normal Function
 // int cube(int num) {
 //   return num * num * num;
 // }
 
 int cube(int num) => num * num * num;
 
-// Function Definition
+// Arrow function with multiple parameters
 double calculateInterest(double principle, double rate, double time) =>
     principle * rate * time / 100;
 
