@@ -21,14 +21,12 @@
 // if false then throw out of the loop
 
 /// Execution Flow
-// first : check initialization (once)
-// second : check condition
-// third : if condition is true then block of code execute
-// fourth : execute increment or decrement after the block of code execute
-// fifth : check condition again
-// sixth : if condition is true then block of code execute
-
-/// It is also known as exit controller loop
+// 1. Initialization (executes once)
+// 2. Condition check
+// 3. If condition is true → execute loop body
+// 4. Increment / Decrement
+// 5. Condition check again
+// 6. Repeat until condition becomes false
 
 /// syntax
 // for ( initialization; condition ; inc/dec) {
