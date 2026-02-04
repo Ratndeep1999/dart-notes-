@@ -1,6 +1,6 @@
-/// Build-in Exception
+/// Built-in Exception
 // Built-in exceptions are predefined exception classes provided by Dart.
-// They are thrown automatically when a runtime error occurs.
+// They are automatically thrown when a runtime error occurs.
 
 /// Types of Built-in Exceptions
 
@@ -35,14 +35,14 @@
 /// syntax
 // try {
 //   code that might throw an exception
-// } on Exception {
-//   specify the exception
+// } on SpecificException  {
+//   handle known exception
 // } catch (e) {
-//   handle other exception
+//   handle unknown exception
 // }
 
 void main() {
-  // Example 1
+  // Example 1: Generic catch
   try {
     // int.parse: string to int
     int value = int.parse("abc"); // FormatException
@@ -53,14 +53,13 @@ void main() {
   // abc
   // ^
 
-  // Example 2
+  // Example 2: Specific exception handling using 'on'
   String data = 'abc';
   try {
     // int.parse: string to int
     int integerValue = int.parse(data);
   } on FormatException {
-    // FormatException
-    print('Format Exception: passed data must be number of string type..!');
+    print('Format Exception: input must be a numeric string..!');
   } catch (e) {
     print("Exception occurred: $e");
   }
