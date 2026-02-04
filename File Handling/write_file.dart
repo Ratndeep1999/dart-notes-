@@ -3,6 +3,8 @@ import 'dart:io';
 /// Read File
 
 /// object.writeAsStringSync() : method use to update/write content inside file.
+// By default, it overrides existing content. Use FileMode.append to add new
+// content without deleting old data.
 
 void main() {
   // object of 'test.txt' file
