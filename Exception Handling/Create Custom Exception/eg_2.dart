@@ -2,7 +2,8 @@ import 'dart:math';
 
 /// Custom Exception class
 class NegativeSquareRootException implements Exception {
-  /// object of NegativeSquareRootException class
+  const NegativeSquareRootException();
+
   @override
   String toString() {
     return "Square root of negative number is not allowed here";
