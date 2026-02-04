@@ -1,8 +1,9 @@
 /// break
-// Use to exit from loop, it stops loop immediately and the program's
-// control moves outside the loop.
-// Use to terminate the execution of loops as well as switch case.
-// Outside the loop's and the switch case, break is not applicable.
+// Used to immediately exit a loop. When break is executed, the loop stops and control moves to the statement
+// after the loop.
+
+// break can be used inside: for, while, do-wile, for-in, and switch case.
+// break is not allowed: outside  loop, or switch and inside forEach().
 
 void main() {
   // break with for loop
