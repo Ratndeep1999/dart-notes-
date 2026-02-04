@@ -22,8 +22,9 @@
 void fetchData() {
   try {
     int.parse("abc"); // FormatException
-  } catch (e) {
+  } catch (e, stackTrace) {
     print("Logging error: $e");
+    print("StackTrace: $stackTrace");
     rethrow; // send exception to caller
   }
 }
