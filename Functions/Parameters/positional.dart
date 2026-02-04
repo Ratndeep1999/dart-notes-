@@ -8,9 +8,9 @@ myBioData(String name, int age, int height){
 }
 
 void main(){
-  // arguments position is wrong
+  // Incorrect argument order (logical error)
   myBioData('Ratndeep', 166, 26); // My self Ratndeep, my age is 166 and my height is 26 cm
 
-  // arguments position match with parameters position
+  // Correct argument order
   myBioData('Ratndeep', 26, 166); // My self Ratndeep, my age is 26 and my height is 166 cm
 }
