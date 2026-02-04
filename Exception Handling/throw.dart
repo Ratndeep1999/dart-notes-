@@ -28,8 +28,8 @@ void main() {
   // Example 2: Throwing a specific exception
   try {
     checkAccount(-10);
-  } catch (e) {
-    print("The account cannot be negative");
+  } on FormatException catch (e) {
+    print(e.message); // Amount cannot be negative
   }
 }
 
