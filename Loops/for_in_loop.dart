@@ -1,12 +1,12 @@
 /// for in
-// Use to iterate over all elements of an iterable
-// (like a List, Set, or Map keys/values)/collection/object.
+// Used to iterate over all elements of an Iterable
+// such as List, Set, or Map (keys, values, or entries).
 
 /// element
-// holds current item in the iteration of collection.
+// Holds the current item from the iterable during each iteration.
 
 /// iterable
-// collection like List, Set, or Map(keys, values)
+// A collection that can be traversed sequentially (e.g., List, Set, Map.keys, Map.values, Map.entries).
 
 /// syntax
 // for (type element in collection/object) {
@@ -42,8 +42,8 @@ void main() {
     'height CM': 165.5,
     'city': 'Nagpur',
   };
-  for (dynamic details in myDetails.entries) {
-    print('${details.key} : ${details.value}');
+  for (MapEntry<String, dynamic> entry in myDetails.entries) {
+    print('${entry.key} : ${entry.value}');
   }
 
   // Name : Ratndeep
