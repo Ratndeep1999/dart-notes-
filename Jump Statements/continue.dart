@@ -1,8 +1,10 @@
 /// continue
-// Use to skip the current iteration.
-// When the condition meet,
-// it skip current iteration and jump to the next iteration.
-// Continue is only applicable inside loops.
+// Used to skip the current iteration of a loop. When continue is executed, the remaining statements
+// in the current iteration are skipped, and the loop moves to the next iteration.
+
+// continue can be used only inside loops: for, while, do-while, and for-in loop. not allowed inside forEach()
+
+
 
 void main() {
   // continue with for loop
