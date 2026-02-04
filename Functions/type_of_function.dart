@@ -1,12 +1,12 @@
 /// Types of Functions
 
 /// Pre defined Function
-// Functions that already build in the dart library, they are just ready to use
-// e.g. print() and main() both are pre defined
+// Functions that are already available in the Dart SDK. They are ready to use.
+// Example: print()
 
 /// User defined Function
-// Function that create by the developers to perform specific task
-// e.g. add() is user defined function
+// Functions created by developers to perform specific tasks.
+// Example: add()
 
 void main() {
   String name = 'Ratndeep';
@@ -15,8 +15,8 @@ void main() {
   print('Sum is ${add(10, 15)}'); // Sum is 15
 }
 
-// Function definition
+// This is function definition
+// add() - user defined function
 int add(int num1, int num2) {
-  int sum;
-  return sum = num1 = num2;
+  return num1 + num2;
 }
