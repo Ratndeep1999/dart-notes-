@@ -1,16 +1,18 @@
 /// Optional Positional Parameters
-// Same as the positional parameters but sometimes i don't want to pass
-// arguments at that time parameters takes default value so this phenomenon
-// is optional positional parameters.
+// Same as the positional parameters but they are not mandatory while calling the function.
+// If a value is not passed, the parameters uses a default value or
+// becomes null ( if nullable).
 
-/// Note: we can define optional positional parameter at last position only.
+/// Note
+// Optional positional parameters must be declared after all required positional parameters
+// and are wrapped inside [ ].
 
-// welcome function
+// Function with default value
 void welcome([String title = 'Sir/Mam.']) {
   print('Welcome $title');
 }
 
-// userAccount function
+// Function with nullable optional parameters
 void userAccount(String name, [int? balance]) {
   print('$name your balance is ${balance ?? 0.0}');
 }
