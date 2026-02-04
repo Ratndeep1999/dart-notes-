@@ -1,28 +1,30 @@
 /// while loop
-// Use when we don't know the end before execution
-// Use when we depend on the condition only
-// This is entry controller loop
+// Used when we do not know in advance
+// how many times the loop will execute.
+// Execution depends only on the condition.
+// It is an ENTRY-CONTROLLED loop.
 
-/// Entry controller loop
-// body of loop will execute only when and only when the condition is true
-// if false then throw out of the loop
+/// Entry-Controlled Loop
+// The condition is checked BEFORE executing the loop body.
+// If the condition is false, the loop body will not execute.
 
 /// Execution Flow
-// first : check initialization (one time)
-// second : check condition
-// third : if condition is true then block of code executes
-// fourth : execute increment or decrement after the block of code execute
-// fifth : check condition again
-// sixth : if condition is false then throw outside the loop (execution stop)
+// 1. Initialization (outside the loop)
+// 2. Condition check
+// 3. If condition is true → execute loop body
+// 4. Increment / Decrement inside loop
+// 5. Condition is checked again
+// 6. If condition becomes false → loop terminates
 
-/// syntax
+/// Syntax
 // initialization;
-// while(condition){
-//   statement
-//   inc/dec
+// while (condition) {
+//   statements;
+//   increment / decrement;
 // }
 
 void main() {
+  /// Example 1: Print 1 to 10
   int i = 1;
   while (i <= 10) {
     print("i : $i");
@@ -40,6 +42,7 @@ void main() {
   // i : 9
   // i : 10
 
+  /// Example 2: Print 10 to 1
   int j = 10;
   while (j >= 1) {
     print("j : $j");
@@ -57,10 +60,10 @@ void main() {
   // j : 2
   // j : 1
 
-  /// infinite
-//   int a = 1;
-//   while(a >= 1){
-//     print("a = $a");
-//     a++;
-//   }
+  /// Infinite Loop Example
+  // int a = 1;
+  // while (a >= 1) {
+  //   print("a : $a");
+  //   a++;
+  // }
 }
