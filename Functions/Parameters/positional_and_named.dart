@@ -1,6 +1,7 @@
 /// positional and named parameters
-// Here, we can define parameters with the combination of positional and named.
-// rarely use
+// Here, positional parameters are mandatory and come first, and Named
+// parameters are optional and come after positional parameters.
+
 
 // Function Definition
 void userAccount(String name, String title, {double? balance}) {
