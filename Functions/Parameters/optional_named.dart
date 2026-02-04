@@ -1,7 +1,8 @@
 /// Optional Named Parameters
-// Here, all named parameters are optional but,
-// we can define optional in three ways using
-// null check, required or default value.
+// Named parameters are optional by default, They can be handled in three ways:
+// 1. `required` → makes parameter mandatory
+// 2. Default value → used when argument is not passed
+// 3. Nullable (`?`) → allows null values
 
 // Function Definition
 void userAccount({
