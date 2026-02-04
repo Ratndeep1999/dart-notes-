@@ -1,9 +1,10 @@
 /// Parameters
-// Parameters is basically the variables that gives inputs to the function
+// Parameters are variables defined in a function that receive
+// input values when the function is called.
 
-/// Flow....
+/// Types
 // Positional
 // Optional positional
 // Named
-// Optional named
-// Positional and Named
+// Required Named
+// Combination of Positional and Named
