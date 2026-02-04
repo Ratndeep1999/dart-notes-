@@ -1,28 +1,29 @@
 /// Do While loop
-// Use to execute the block of code at least once, even if the condition is false.
-// Here condition check after the execution, no matters what the statement
-// This is Exit controller loop
+// Used when the loop body must execute
+// at least once, regardless of the condition.
+// It is an EXIT-CONTROLLED loop.
 
-/// Exit controller loop
-// condition won't be check at beginning instead condition will be
-// check at the end of the loop.
+/// Exit-Controlled Loop
+// The condition is checked AFTER executing the loop body.
+// Therefore, the loop executes at least once.
 
 /// Execution Flow
-// first : check initialization (one time)
-// second : execute block of code
-// third : execute increment or decrement
-// fourth : check condition
-// fifth : if condition is true then again execute the block of code
-// sixth : again execute increment or decrement and then check condition
+// 1. Initialization (outside the loop)
+// 2. Execute loop body
+// 3. Increment / Decrement
+// 4. Condition check
+// 5. If condition is true → repeat
+// 6. If condition is false → loop terminates
 
-/// syntax
+/// Syntax
 // initialization;
 // do {
-//   statement
-//   inc/dec;
+//   statements;
+//   increment / decrement;
 // } while (condition);
 
 void main() {
+  /// Example 1: Print 1 to 10
   int i = 1;
   do {
     print('i = $i');
@@ -40,6 +41,7 @@ void main() {
   // i = 9
   // i = 10
 
+  /// Example 2: Condition false but executes once
   int j = 0;
   do {
     print('j = $j');
@@ -49,12 +51,9 @@ void main() {
   // j = 0
   // j = 1
 
-  /// infinite
+  /// Infinite Loop Example
   // int a = 1;
   // do {
   //   print('a = $a');
-  // } while (a >= 1);
-
-  // a = 1
-  // ...infinite
+  // } while (a >= 1); // no increment so, infinite loop
 }
