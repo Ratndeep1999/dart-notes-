@@ -3,43 +3,40 @@
 // and prevent the program from crashing.
 
 /// Components
-// try {}    --> Code that may throw an exception
-// catch {}  --> Code that handles the exception
+// try {}    --> Block that may throw an exception
+// catch {}  --> Block that handles the exception
 // e         --> Exception object
 
 /// try
-// The `try` block contains code that may cause an exception.
-// If an exception occurs, Dart immediately stops executing
-// the remaining code in the `try` block and jumps to `catch`.
+// The 'try' block contains code that may cause an exception. If an exception occurs, Dart stops executing the remaining
+// code inside try and jumps to catch.
 
 /// catch
-// The `catch` block contains code that handles the exception.
-// It receives the exception object and allows us to
+// The 'catch' block contains code that handles the exception. It receives the exception object and allows us to
 // show a user-friendly message or perform recovery actions.
 
 /// e (exception object)
-// The variable `e` represents the exception object.
-// It provides information about the error that occurred.
+// The variable 'e' represents the exception object. It provides information about the error that occurred.
 
 /// Why try–catch?
 // To prevent application crashes caused by runtime errors,
-// we use try–catch to catch and handle exceptions gracefully.
+// and handle failures safely.
 
 /// syntax
 // try {
 //   code that may cause an exception
 // } catch (e) {
-//   code that handles the exception
+//   handle exception
 // }
 
 /// Note:
 // All built-in exception classes in Dart are subclasses of `Exception`.
 
 void main() {
-  // Example 1
+  // Example 1: Generic catch
   try {
     String message = "Hello";
-    print('The character at the position 5 is ${message[5]}'); // RangeError
+    print('Character at position 5 is ${message[5]}'); // RangeError
     print('Inside try block..!');
   } catch (e) {
     print("Exception occurred: $e");
@@ -50,15 +47,13 @@ void main() {
   // Exception occurred: RangeError (index): Invalid value: Not in inclusive range 0..4: 5
   // Outside try-catch..!
 
-  // Example 2
+  // Example 2: Using 'on' for specific exception
   try {
     int result = 12 ~/ 0;
     print('The result is $result');
   } on IntegerDivisionByZeroException {
     // IntegerDivisionByZeroException is inbuild subclass of Exception class.
-    print(
-      'Can not divide by zero',
-    ); // Developer knows the exception that's why 'on' clause use.
+    print('Can not divide by zero'); // Developer knows the exception that's why 'on' clause use.
   }
   // Can not divide by zero
 }
