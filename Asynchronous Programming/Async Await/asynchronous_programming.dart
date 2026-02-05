@@ -11,14 +11,16 @@
 /// Asynchronous Programming
 // Allows long-running tasks to execute in the background without blocking
 // the main thread, keeping the UI responsive.
-// → Time-consuming tasks run on background threads (isolates).
-// → Once the task completes, it notifies the main thread to update the UI.
+// Time-consuming I/O tasks are scheduled on the event loop (non-blocking).
+// CPU-intensive tasks require isolates.
+// Once the task completes, it notifies the main thread to update the UI.
 
 /// Synchronous blocks execution, asynchronous allows non-blocking execution.
 
 /// Future
 // Represents a value that will be available in the future it can be a
 // value or error.
+
 // Example:
 Future<String> fetchData() {
   return Future.delayed(Duration(seconds: 2), () {
