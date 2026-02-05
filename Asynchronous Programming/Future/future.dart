@@ -1,5 +1,5 @@
 /// Future
-// Future is a class that returns a object.
+// Future is a class whose object represents a future value or error.
 
 // eg. of future<String>
 Future<String> getUserName1() async {
